@@ -1,0 +1,35 @@
+{
+    "status": "ok",
+    "meta": {
+        "count": 1,
+        "total": 1
+    },
+    "data": [
+        {
+            "members_count": 75,
+            "name": "NewAge",
+            "color": "#80005A",
+            "created_at": 1469635060,
+            "tag": "N-AGE",
+            "emblems": {
+                "x32": {
+                    "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_969\/500134969\/emblem_32x32.png"
+                },
+                "x24": {
+                    "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_969\/500134969\/emblem_24x24.png"
+                },
+                "x256": {
+                    "wowp": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_969\/500134969\/emblem_256x256.png"
+                },
+                "x64": {
+                    "wot": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_969\/500134969\/emblem_64x64_tank.png",
+                    "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_969\/500134969\/emblem_64x64.png"
+                },
+                "x195": {
+                    "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_969\/500134969\/emblem_195x195.png"
+                }
+            },
+            "clan_id": 500134969
+        }
+    ]
+}
