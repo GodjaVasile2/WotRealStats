@@ -70,7 +70,7 @@ def get_and_insert_clan_details(clan_name):
             execute_db_query(insert_stmt, clan)
 
             # write the clan details to a csv file
-            # with open("clan_info.csv", "a", newline='') as file:
+            # with open("jsons/clan_info.csv", "a", newline='') as file:
             #     writer = csv.writer(file)
             #     writer.writerow(clan)
 
@@ -98,7 +98,7 @@ def get_and_insert_clan_members(clan_members, clan_id):
     execute_db_query(insert_stmt, members_list)
 
     # write the clan members to a csv file
-    # with open("clan_members.csv", "a", newline='') as file:
+    # with open("jsons/clan_members.csv", "a", newline='') as file:
     #     writer = csv.writer(file)
     #     for player in members_list:
     #         writer.writerow(player)
@@ -145,7 +145,7 @@ def get_and_insert_player_stats(account_id):
         execute_db_query(insert_stmt, player_stats)
 
         # # write the stats to a csv file
-        # with open("statistics.csv", "a", newline='') as file:
+        # with open("jsons/statistics.csv", "a", newline='') as file:
         #     writer = csv.writer(file)
         #     writer.writerow(player_stats)
 
