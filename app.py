@@ -179,25 +179,23 @@ def get_and_insert_players_tanks(account_id):
         execute_db_query(insert_stmt, player_tanks_list)
 
 
+
 def main():
-    clan_names = ["REZIS"]
+    clan_name = input("Enter the clan name: ")
 
-    for clan_name in clan_names:
-        clan_members, clan_id = get_and_insert_clan_details(clan_name)
+    clan_members, clan_id = get_and_insert_clan_details(clan_name)
 
-        get_and_insert_clan_members(clan_members, clan_id)
+    get_and_insert_clan_members(clan_members, clan_id)
 
-        # TO DO manage the interation inside the function but in the same time to be able to insert players that are not part of a clan
-        for player in clan_members:
-            account_id = player["account_id"]
-            get_and_insert_player_stats(account_id)
+    for player in clan_members:
+        account_id = player["account_id"]
+        get_and_insert_player_stats(account_id)
 
-        for player in clan_members:
-            account_id = player["account_id"]
-            get_and_insert_players_tanks(account_id
+    for player in clan_members:
+        account_id = player["account_id"]
+        get_and_insert_players_tanks(account_id)
 
-                                         )
-        print(f"Finished inserting data for clan {clan_name}")
+    print(f"Finished inserting data for clan {clan_name}")
 
 
 if __name__ == "__main__":
